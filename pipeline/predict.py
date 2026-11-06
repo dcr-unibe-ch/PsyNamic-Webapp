@@ -205,7 +205,7 @@ def predict(model: Union[AutoModelForTokenClassification, AutoModelForSequenceCl
     """
 
     # Ensure threshold is a float
-    threshold = float(threshold) if threshold else None
+    threshold = float(threshold) if threshold not in (None, '') else None
     pred_data = []
 
     # Prefer explicit device argument from caller (returned by load_model).
@@ -526,6 +526,12 @@ def main():
         help='Batch size for model inference (default: 1)'
     )
     parser.add_argument(
+        '--keep-all-labels',
+        action='store_true',
+        help='Multi-label tasks: keep every label with its probability (threshold 0) instead of applying '
+             'prediction_threshold from model_paths.json, so thresholds can be applied later.'
+    )
+    parser.add_argument(
         '--log-to-stdout',
         action='store_true',
         help='Redirect logs to stdout instead of a logfile.'
@@ -764,7 +770,7 @@ def main():
                     predictions_df = predict(
                         model,
                         data,
-                        threshold=m['prediction_threshold'],
+                        threshold=0.0 if args.keep_all_labels else m['prediction_threshold'],
                         batch_size=args.batch_size,
                         device=device
                     )
@@ -787,7 +793,8 @@ def main():
                                 'id': row['id'],
                                 'task': m['task'],
                                 'label': id2label[pred],
-                                'probability': row['probability'][i],
+                                # Multi-label: probabilities of the predicted labels only; single-label: all labels
+                                'probability': row['probability'][i] if data.is_multilabel else row['probability'][pred],
                                 'is_multilabel': m['is_multilabel'],
                                 'model': model_name
                             }
