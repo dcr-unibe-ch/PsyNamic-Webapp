@@ -1,7 +1,7 @@
 [
     {
         "task": "Study Type",
-        "model_path": "models/biolinkbert_study_type_20251005/checkpoint-480",
+        "model_path": "models/biomedbert-abstract_study_type_20261106/checkpoint-384",
         "prediction_threshold": "0.5",
         "id2label": {
             "0": "Randomized-controlled trial (RCT)",
@@ -18,8 +18,8 @@
     },
     {
         "task": "Study Purpose",
-        "model_path": "models/biobert_study_purpose_20250221/checkpoint-950",
-        "prediction_threshold": "0.31",
+        "model_path": "models/biomedbert-abstract_study_purpose_20261106/checkpoint-475",
+        "prediction_threshold": "0.29",
         "id2label": {
             "0": "Efficacy endpoints",
             "1": "Safety endpoints",
@@ -32,8 +32,8 @@
     },
     {
         "task": "Study Control",
-        "model_path": "models/pubmedbert_study_control_20250221/checkpoint-776",
-        "prediction_threshold": "0.12",
+        "model_path": "models/biomedbert-abstract_study_control_20261106/checkpoint-485",
+        "prediction_threshold": "0.29",
         "id2label": {
             "0": "Placebo",
             "1": "Active control",
@@ -46,7 +46,7 @@
     },
     {
         "task": "Data Type",
-        "model_path": "models/biobert_data_type_20250221/checkpoint-768",
+        "model_path": "models/biolinkbert_data_type_20261107/checkpoint-288",
         "prediction_threshold": "0.5",
         "id2label": {
             "0": "Cross-sectional",
@@ -59,7 +59,7 @@
     },
     {
         "task": "Data Collection",
-        "model_path": "models/biobert_data_collection_20250221/checkpoint-768",
+        "model_path": "models/clinicalbert_data_collection_20261106/checkpoint-576",
         "prediction_threshold": "0.5",
         "id2label": {
             "0": "Not applicable",
@@ -71,7 +71,7 @@
     },
     {
         "task": "Number of Participants",
-        "model_path": "models/biolinkbert_number_of_participants_20250221/checkpoint-864",
+        "model_path": "models/biomedbert-abstract_number_of_participants_20261106/checkpoint-480",
         "prediction_threshold": "0.5",
         "id2label": {
             "0": "1-20",
@@ -90,7 +90,7 @@
     },
     {
         "task": "Sex of Participants",
-        "model_path": "models/biobert_sex_of_participants_20250221/checkpoint-672",
+        "model_path": "models/biolinkbert_sex_of_participants_20261107/checkpoint-384",
         "prediction_threshold": "0.5",
         "id2label": {
             "0": "Both sexes",
@@ -103,8 +103,8 @@
     },
     {
         "task": "Age of Participants",
-        "model_path": "models/pubmedbert_age_of_participants_20250221/checkpoint-672",
-        "prediction_threshold": "0.12",
+        "model_path": "models/biobert_age_of_participants_20261106/checkpoint-384",
+        "prediction_threshold": "0.04",
         "id2label": {
             "0": "Pediatric (< 18 years old)",
             "1": "Adult (\u226518 years)",
@@ -115,8 +115,8 @@
     },
     {
         "task": "Substances",
-        "model_path": "models/biolinkbert_substances_20250228/checkpoint-2037",
-        "prediction_threshold": "0.16",
+        "model_path": "models/biomedbert-abstract_substances_20261106/checkpoint-1455",
+        "prediction_threshold": "0.10",
         "id2label": {
             "0": "Ketamine",
             "1": "S-Ketamine",
@@ -139,8 +139,8 @@
     },
     {
         "task": "Application Form",
-        "model_path": "models/scibert_application_form_20250221/checkpoint-1164",
-        "prediction_threshold": "0.10",
+        "model_path": "models/biomedbert-abstract_application_form_20261106/checkpoint-582",
+        "prediction_threshold": "0.12",
         "id2label": {
             "0": "Oral",
             "1": "Nasal",
@@ -155,8 +155,8 @@
     },
     {
         "task": "Regimen",
-        "model_path": "models/pubmedbert_regimen_20250221/checkpoint-576",
-        "prediction_threshold": "0.43",
+        "model_path": "models/biobert_regimen_20261106/checkpoint-288",
+        "prediction_threshold": "0.24",
         "id2label": {
             "0": "Microdosing",
             "1": "Multiple Applications",
@@ -167,8 +167,8 @@
     },
     {
         "task": "Setting",
-        "model_path": "models/pubmedbert_setting_20250221/checkpoint-864",
-        "prediction_threshold": "0.10",
+        "model_path": "models/biobert_setting_20261106/checkpoint-576",
+        "prediction_threshold": "0.12",
         "id2label": {
             "0": "Clinical",
             "1": "Naturalistic",
@@ -182,8 +182,8 @@
     },
     {
         "task": "Substance Naivety",
-        "model_path": "models/biomedbert-abstract_substance_naivety_20250221/checkpoint-679",
-        "prediction_threshold": "0.16",
+        "model_path": "models/biolinkbert_substance_naivety_20261107/checkpoint-388",
+        "prediction_threshold": "0.18",
         "id2label": {
             "0": "Substance-Na\u00efve Participants",
             "1": "Substance-non-na\u00efve participants",
@@ -194,8 +194,8 @@
     },
     {
         "task": "Condition",
-        "model_path": "models/pubmedbert_condition_20250221/checkpoint-1140",
-        "prediction_threshold": "0.22",
+        "model_path": "models/scibert_condition_20261106/checkpoint-950",
+        "prediction_threshold": "0.12",
         "id2label": {
             "0": "Psychiatric condition",
             "1": "Depression",
@@ -216,8 +216,8 @@
     },
     {
         "task": "Outcomes",
-        "model_path": "models/scibert_outcomes_20250221/checkpoint-1380",
-        "prediction_threshold": "0.18",
+        "model_path": "models/biolinkbert_outcomes_20261107/checkpoint-1104",
+        "prediction_threshold": "0.29",
         "id2label": {
             "0": "The ability to drive a car",
             "1": "Suicide",
@@ -238,8 +238,8 @@
     },
     {
         "task": "Clinical Trial Phase",
-        "model_path": "models/clinicalbert_clinical_trial_phase_20250221/checkpoint-776",
-        "prediction_threshold": "0.12",
+        "model_path": "models/scibert_clinical_trial_phase_20261106/checkpoint-388",
+        "prediction_threshold": "0.16",
         "id2label": {
             "0": "Phase 1",
             "1": "Phase 2",
@@ -252,7 +252,7 @@
     },
     {
         "task": "Study Conclusion",
-        "model_path": "models/scibert_study_conclusion_20251005/checkpoint-288",
+        "model_path": "models/biolinkbert_study_conclusion_20261107/checkpoint-288",
         "prediction_threshold": "0.5",
         "id2label": {
             "0": "Positive",
@@ -266,7 +266,7 @@
     },
     {
         "task": "Relevant",
-        "model_path": "models/biobert_relevant_20250306/checkpoint-2825",
+        "model_path": "models/biolinkbert_relevant_20261107/checkpoint-1130",
         "prediction_threshold": "0.5",
         "id2label": {
             "0": "irrelevant",
@@ -276,7 +276,7 @@
     },
     {
         "task": "NER",
-        "model_path": "models/biomedbert-abstract_ner_bio_20250221/checkpoint-679",
+        "model_path": "models/scibert_ner_bio_20261106/checkpoint-348",
         "prediction_threshold": "",
         "id2label": {
             "0": "O",
