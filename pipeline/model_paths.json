@@ -276,7 +276,7 @@
     },
     {
         "task": "NER",
-        "model_path": "models/scibert_ner_bio_20261106/checkpoint-348",
+        "model_path": "models/biomedbert-abstract_ner_bio_20261106/checkpoint-460",
         "prediction_threshold": "",
         "id2label": {
             "0": "O",
