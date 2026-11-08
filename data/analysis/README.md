@@ -19,4 +19,11 @@ Rows are records. Studies are linked across files by `id`. ASReview records use 
 
 | File | Rows | What it is |
 |---|---|---|
-| `pubmed_results_19000101_20261031_00-03-23.csv` | 22,292 (4,983 without abstract) | PubMed fetch, 1900/01/01–2026/10/31 (`[Date - Create]`), fetched 5 Nov 2026 with `SEARCH_STRING_WITHOUT_STUDY_TYPE` from `get_pubmed_data.py`.
+| `pubmed_results_19000101_20261031_00-03-23.csv` | 22,292 (4,983 without abstract) | PubMed fetch, 1900/01/01–2026/10/31 (`[Date - Create]`), fetched 5 Nov 2026 with `SEARCH_STRING_WITHOUT_STUDY_TYPE` from `get_pubmed_data.py`.| `studies_20261031_00-03-00.csv` | 22,292 | The PubMed fetch above with the prediction of the **new relevance model** (`biolinkbert_relevant_20261107`; `prediction`, `probability`). 6,337 relevant, of which 259 have no abstract (classified on the title only, not loaded into the database). Ubelix job 21507639, 8 Nov 2026. |
+| `studies_relevant_deduplicated_excluded_20261031_00-00-00.csv` | 3,464 | **Automated route seed file.** The relevant records with an abstract (6,078), minus records matching an ASReview-excluded or after-stopping record (322) or an ASReview-included record (2,292), matched on normalised PMID **or** DOI. Written by `analysis/analysis_pubmed_new_post_revision.ipynb`. In `init_db.sh` this creates the automated papers (`-s`). |
+| `class_predictions_20240101_00-06-48_thresholded.csv` | 50,118 (2,352 studies) | New models, 17 classification tasks, on `as_review_studies_relevant_unannotated_…`. Multi-label tasks at the tuned thresholds of `pipeline/model_paths.json` (`probability >= threshold`); single-label = argmax. |
+| `ner_predictions_20240101_00-00-27.csv` | 2,352 | New NER model (`biomedbert-abstract_ner_bio_20261106`, selected on dosage) on the same studies. Same file name as the old file in `data/history/`. |
+| `class_predictions_20261031_00-16-34_dedup_thresholded.csv` | 74,585 (3,464 studies) | New models on the PubMed relevant set, restricted to the ids of the deduplicated seed file, thresholds as above. Restricting is needed: `populate.py` falls back to a `pubmed_id` lookup, so predictions of removed duplicates would otherwise attach to the matching manual paper. |
+| `ner_predictions_20261031_00-01-01_dedup.csv` | 3,464 | New NER model on the PubMed relevant set, restricted to the deduplicated ids. |
+
+The unthresholded prediction files (`--keep-all-labels`, all labels with probabilities) and the unfiltered NER file of the PubMed set are in `psynamic_predictions.tar.gz` (research storage), not here.

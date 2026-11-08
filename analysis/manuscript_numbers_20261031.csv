@@ -1,0 +1,119 @@
+statistic,n_submitted,pct_submitted,n_new,pct_new
+N,5651,100.0,6773,100.0
+Study type specified (not Other),3507,62.1,3986,58.9
+Study Type: Real-world study,1266,22.4,1231,18.2
+Study Type: Randomized-controlled trial (RCT),826,14.6,872,12.9
+Study Type: Systematic review/meta-analysis,606,10.7,872,12.9
+Study Control: Non-controlled,2744,48.6,3045,45.0
+Study Control: Placebo,1292,22.9,1294,19.1
+Study Purpose: Safety endpoints,3408,60.3,4303,63.5
+Study Purpose: Efficacy endpoints,2438,43.1,3025,44.7
+Study Purpose: Mechanism of action,1620,28.7,1763,26.0
+Study Purpose: Demographic study,973,17.2,1023,15.1
+Study Purpose: Pharmacokinetics,425,7.5,776,11.5
+Study Purpose: Disease model study,132,2.3,94,1.4
+Data Collection: Prospective,592,10.5,715,10.6
+Data Type: Cross-sectional,1857,32.9,2758,40.7
+Data Type: Longitudinal short,1154,20.4,1630,24.1
+Data Type: Longitudinal long,471,8.3,341,5.0
+Participants 1-40,2041,36.1,2274,33.6
+Participants 41-100,847,15.0,901,13.3
+Participants >100,1550,27.4,1911,28.2
+Participants Unknown,809,14.3,1095,16.2
+Sex: Both sexes,3948,69.9,4235,62.5
+Sex: Unknown,956,16.9,1119,16.5
+Sex: Male,288,5.1,445,6.6
+Sex: Female,16,0.3,258,3.8
+Age: Adult (≥18 years),5201,92.0,6375,94.1
+Age: Pediatric (< 18 years old),282,5.0,802,11.8
+Age: Unknown,28,0.5,1620,23.9
+Substance: Ketamine pooled,2094,37.1,2640,39.0
+Substance: MDMA,1766,31.3,1907,28.2
+Substance: Psilocybin,969,17.1,1390,20.5
+Substance: LSD,673,11.9,838,12.4
+>=2 psychedelics,770,13.6,1102,16.3
+Combination Therapy,1000,17.7,1219,18.0
+Application Form: Unknown,3236,57.3,4117,60.8
+Application Form: Intravenous,1174,20.8,1135,16.8
+Application Form: Oral,606,10.7,519,7.7
+Regimen: Unknown,3200,56.6,4583,67.7
+Regimen: Single Dose,1453,25.7,2434,35.9
+Regimen: Multiple Applications,1355,24.0,1578,23.3
+Regimen: Microdosing,15,0.3,15,0.2
+Setting: Clinical,2689,47.6,3310,48.9
+Setting: Unknown,2512,44.5,2960,43.7
+Setting: Not applicable,719,12.7,829,12.2
+Setting: Naturalistic,378,6.7,333,4.9
+Setting: Party setting,228,4.0,269,4.0
+Setting: Palliative Setting,105,1.9,215,3.2
+Setting: Other setting,33,0.6,210,3.1
+Naivety: Substance-Naïve Participants,1085,19.2,1313,19.4
+Naivety: Unknown,3619,64.0,4075,60.2
+Naivety: Substance-non-naïve participants,1743,30.8,2073,30.6
+Naivety: Not applicable,660,11.7,916,13.5
+Condition: Healthy Participants,3686,65.2,3840,56.7
+Healthy + a condition,954,,733,
+Condition: Depression,1744,30.9,2362,34.9
+Condition: Substance abuse,558,9.9,213,3.1
+Condition: Other addictions (e.g. smoking),207,3.7,422,6.2
+Condition: ,0,0.0,0,0.0
+Condition: Anxiety,199,3.5,471,7.0
+Outcomes: Mental Functions,3386,59.9,3882,57.3
+Outcomes: Soluble biomarker,1109,19.6,1409,20.8
+Outcomes: Surveys,1085,19.2,1197,17.7
+Outcomes: Physiological Functions,758,13.4,744,11.0
+Outcomes: Psychedelic experience,592,10.5,495,7.3
+Depression with Ketamine (% of depression),1311,75.2,1643,69.6
+Depression with Psilocybin (% of depression),362,20.8,549,23.2
+['Palliative Setting'] with Psilocybin (% of condition),73,58.4,153,54.8
+['Alcoholism'] with Psilocybin (% of condition),70,44.9,120,42.1
+['Anxiety'] with Psilocybin (% of condition),85,42.7,204,43.3
+['Other addictions (e.g. smoking)'] with Psilocybin (% of condition),66,31.9,131,31.0
+['Other addictions (e.g. smoking)'] with Ibogaine (% of condition),35,16.9,48,11.4
+MDMA with ['Substance abuse'] (% of MDMA),333,18.9,94,4.9
+MDMA with [] (% of MDMA),0,0.0,0,0.0
+MDMA: controlled (% of substance),998,56.5,847,44.4
+MDMA: non-controlled (% of substance),914,51.8,942,49.4
+Ketamine: controlled (% of substance),1138,54.3,1288,48.8
+Ketamine: non-controlled (% of substance),835,39.9,955,36.2
+Psilocybin: controlled (% of substance),453,46.7,497,35.8
+Psilocybin: non-controlled (% of substance),435,44.9,611,44.0
+Psychedelic mushrooms: controlled (% of substance),10,35.7,30,22.4
+Psychedelic mushrooms: non-controlled (% of substance),24,85.7,100,74.6
+Ibogaine: controlled (% of substance),14,15.6,15,17.6
+Ibogaine: non-controlled (% of substance),72,80.0,57,67.1
+Salvinorin A: controlled (% of substance),18,38.3,12,22.2
+Salvinorin A: non-controlled (% of substance),36,76.6,38,70.4
+5-MeO-DMT: controlled (% of substance),30,38.0,24,30.4
+5-MeO-DMT: non-controlled (% of substance),50,63.3,36,45.6
+Ketamine: RCT (% of substance),502,24.0,546,20.7
+Ketamine: real-world (% of substance),163,7.8,225,8.5
+MDMA: RCT (% of substance),124,7.0,115,6.0
+MDMA: real-world (% of substance),659,37.3,617,32.4
+Psychedelic mushrooms: RCT (% of substance),0,0.0,1,0.7
+Psychedelic mushrooms: real-world (% of substance),25,89.3,61,45.5
+Salvinorin A: RCT (% of substance),5,10.6,5,9.3
+Salvinorin A: real-world (% of substance),26,55.3,15,27.8
+Mescaline: RCT (% of substance),1,1.1,3,1.5
+Mescaline: real-world (% of substance),48,51.1,80,39.4
+Ketamine: efficacy (% of substance),1439,68.7,1770,67.0
+Psilocybin: efficacy (% of substance),540,55.7,730,52.5
+DMT: mechanism (% of substance),89,46.1,81,29.9
+Ayahuasca: mechanism (% of substance),134,38.6,139,32.7
+LSD: mechanism (% of substance),216,32.1,210,25.1
+5-MeO-DMT: mechanism (% of substance),25,31.6,11,13.9
+Psychedelic mushrooms: demographic (% of substance),20,71.4,49,36.6
+Salvinorin A: demographic (% of substance),21,44.7,15,27.8
+Mescaline: demographic (% of substance),39,41.5,70,34.5
+MDMA: demographic (% of substance),603,34.1,609,31.9
+Dose Ketamine: median mg (n studies) [IQR] max,35 (n=738) [21-39.6] max 5e+05,,35 (n=778) [21-40] max 5e+05,
+Dose S-Ketamine: median mg (n studies) [IQR] max,35 (n=146) [17.5-64.8] max 750,,35 (n=235) [17.5-70] max 5250,
+Dose R-Ketamine: median mg (n studies) [IQR] max,35 (n=9) [35-46.2] max 70,,35 (n=18) [35-70] max 700,
+Dose Psilocybin: median mg (n studies) [IQR] max,20 (n=283) [10-25] max 1.505e+04,,20 (n=353) [10-25] max 1.505e+04,
+Dose MDMA: median mg (n studies) [IQR] max,80 (n=247) [52.5-105] max 7.51e+04,,80 (n=278) [52.5-105] max 7.51e+04,
+Dose LSD: median mg (n studies) [IQR] max,0.05 (n=137) [0.013-0.1] max 1e+05,,0.05 (n=158) [0.01-0.1] max 250,
+Dose DMT: median mg (n studies) [IQR] max,15 (n=26) [1.8-25] max 147,,11.5 (n=31) [2.48-21] max 147,
+Dose Salvinorin A: median mg (n studies) [IQR] max,0.775 (n=11) [0.1-2.1] max 75,,1.16 (n=13) [0.125-3.5] max 75,
+Dose 5-MeO-DMT: median mg (n studies) [IQR] max,8 (n=6) [6-12] max 18,,10 (n=14) [6-12] max 1400,
+Dose Ibogaine: median mg (n studies) [IQR] max,120 (n=15) [20-670] max 3.8e+04,,110 (n=18) [20-643] max 3.8e+04,
+Dose: studies in dosage analysis,1563,,1836,
